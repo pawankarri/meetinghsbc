@@ -2,6 +2,8 @@ import { Box, Tab, Tabs, Typography } from '@mui/material'
 import React from 'react'
 import GridData from './GridData';
 import Board from './Board';
+import Charts from './Charts';
+import Schedule from './Schedule';
 
 export default function Main() {
     function CustomTabPanel(props) {
@@ -58,10 +60,10 @@ export default function Main() {
      <Board/>
     </CustomTabPanel>
     <CustomTabPanel value={value} index={2}>
-      Item Three
+      <Charts/>
     </CustomTabPanel>
     <CustomTabPanel value={value} index={3}>
-      Item Four
+      <Schedule/>
     </CustomTabPanel>
   </Box>
   </Box>
